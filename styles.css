@@ -1,0 +1,55 @@
+body{
+  background-color: #d8d8d8;
+}
+p{
+  font-family: didot;
+}
+@keyframes li {
+  from {color: white; letter-spacing: 5px; background-color: black;}
+  to {color: black; letter-spacing: 7px; background-color: white;}
+}
+@keyframes img {
+  from {content:url("NotBlindwhiteTrans.png"); background-color: black;}
+  to{content:url("NotBlindb&wTrans.png"); background-color: white;}
+}
+#titimg{
+  width: 72px;
+  height: 24px;
+  padding: 18px;
+  content:url("NotBlindwhiteTrans.png");
+  background-color: black;
+}
+#titimg:hover{
+  animation-name: img;
+  animation-duration: 1s;
+  content:url("NotBlindb&wTrans.png");
+  background-color: white;
+}
+ul#nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+li{
+  font-family: Product Sans;
+  color:white;
+  float: left;
+  padding-left: 10px;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+li a:hover{
+  animation-name: li;
+  animation-duration: 1s;
+  color: black;
+  letter-spacing: 7px;
+  background-color: white;
+}
